@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import utils.DriverWrapper;
 
-public class TextBoxTest extends  BaseTest {
+public class TextBoxTest {
 
   @Test
   public void testTextBox () {
