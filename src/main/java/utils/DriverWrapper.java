@@ -16,6 +16,8 @@ public class DriverWrapper {
     } else {
       System.setProperty("webdriver.chrome.driver", fileUtil.getAbsoluteFilePath(WEB_DRIVER_WINDOWS_PATH));
     }
-    return new ChromeDriver();
+    WebDriver driver = new ChromeDriver();
+    driver.manage().window().maximize();
+    return driver;
   }
 }
